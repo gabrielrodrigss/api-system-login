@@ -1,4 +1,5 @@
 const express = require('express');
+const port = process.env.port || 3000
 
 const AuthController = require("./controllers/AuthController");
 const AdminController = require("./controllers/AdminController");
@@ -13,6 +14,6 @@ app.use("/auth", AuthController);
 // Se receber um req em /admin, e se o middleware chamar o next, a req passa para o AdminController
 app.use("/admin", authenticateMiddleware, AdminController); 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server is running")
 })
