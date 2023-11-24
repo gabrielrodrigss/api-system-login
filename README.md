@@ -1,6 +1,6 @@
 # Exemplos CURL para testar no postman
 
-Segue o exemplo de testes que podem ser feitos através do postman com CURL, estou enviando para economizar tempo de quem estiver analisando.
+Segue o exemplo de testes que podem ser feitos através do postman com CURL que estão entre aspas duplas, estou enviando para economizar tempo de quem estiver analisando.
 
 - Cadastro
 
