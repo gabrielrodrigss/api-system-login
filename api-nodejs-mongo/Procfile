@@ -1,1 +1,1 @@
-web: npm start --prefix api-nodejs-mongo
+web: npm start 
