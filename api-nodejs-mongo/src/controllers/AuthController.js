@@ -14,7 +14,7 @@ const generateToken = (user = {}) => {
         id: user.id,
         nome: user.nome
     },authConfig.secret , {
-        expiresIn: 1800
+        expiresIn: 86400
     });
 }
 
