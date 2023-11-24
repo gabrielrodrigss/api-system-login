@@ -4,9 +4,10 @@
   "description": "",
   "main": "/server.js",
   "scripts": {
-		"start": "node server.js",
-		"dev": "nodemon server.js"
-	},
+    "start": "yarn run build && node dist/server.js",
+    "build": "rimraf ./dist && tsc", 
+    "dev": " nodemon ./src/server.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
