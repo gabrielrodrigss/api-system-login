@@ -1,1 +1,1 @@
-web: npm start
+web: node api-nodejs-mongo/src/server.js
