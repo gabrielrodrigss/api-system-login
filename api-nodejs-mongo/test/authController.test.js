@@ -1,6 +1,6 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const app = require("../src/index"); // Importe o arquivo principal do seu aplicativo
+const app = require("../src/index"); 
 const expect = chai.expect;
 
 chai.use(chaiHttp);
@@ -37,6 +37,4 @@ describe("AuthController", () => {
                 });
         });
     });
-
-    // Adicione mais testes conforme necessário para outras funcionalidades do AuthController
 });
