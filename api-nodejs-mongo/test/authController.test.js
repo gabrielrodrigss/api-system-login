@@ -1,6 +1,6 @@
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const app = require("../src/index"); 
+const app = require("../src/server"); 
 const expect = chai.expect;
 
 chai.use(chaiHttp);
@@ -11,8 +11,8 @@ describe("AuthController", () => {
             chai.request(app)
                 .post("/auth/authenticate")
                 .send({
-                    email: "usuario@example.com",
-                    senha: "senha123",
+                    email: "desenvolvedor.gabriel@gmail.com",
+                    senha: "123456",
                 })
                 .end((err, res) => {
                     expect(res).to.have.status(200);
